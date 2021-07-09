@@ -8,6 +8,17 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.pageHeader h1{
+    margin: 0;
+    color: white;
+}
+
+body{
+    background-image: url("/images/latte.jpg");
+    background-size: 100%;
+}
+
+/* Main containter for the coffee shops */
 .shops {
     display: flex;
     justify-content: space-around;
@@ -19,35 +30,49 @@
     width: 65%;
 }
 
+/* Each box for individual coffee shops */
 .list_shop {
     flex-basis: 25%;
     border: 1px dashed black;
     padding: 5px;
     margin: 5px -10px 5px 0px;
-    background:burlywood;
+    /* background:burlywood; */
+    background-image: url("/images/notecard.jpg");
+    background-size: 165%;
+}
+.list_shop:hover {
+    color: rgb(255, 255, 255);
+    background-color: chocolate;
+    background-image: none;
+}
+.list_shop:hover a {
+    color: palegreen;
+    background-image: none;
 }
 
+ 
 .shop_name {
     font-size: 20px;
     font-weight: bold;
+    padding-bottom: 2px;
 }
 
+/* Shop information below the shop name */
 .shop_info {
     font-size: 20px;
     padding-left: 20px;
+    line-height: 108%;
 }
 .shop_info a {
-    color: royalblue;
-}
-.shop_info a:active {
-    color: red;
+    color: orangered;
 }
 .shop_info a:hover {
     color: darkgreen;
 }
 .shop_info a:active {
-    color: red;
+    color: blue;
 }
+
 
 
 
